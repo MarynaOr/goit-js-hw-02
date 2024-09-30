@@ -1,8 +1,3 @@
-function getShippingMessage(country, price, deliveryFee) {
-  const totalPrice = price + deliveryFee;
-  return `Shipping to ${country} will cost ${totalPrice} credits`;
-}
-
 function formatMessage(message, maxLength) {
   const t = message.length;
   if (t <= maxLength) {

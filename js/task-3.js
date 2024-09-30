@@ -1,9 +1,3 @@
-function getElementWidth(content, padding, border) {
-  const totalWidth =
-    parseFloat(content) + parseFloat(padding) * 2 + parseFloat(border) * 2;
-  return totalWidth;
-}
-
 function checkForSpam(message) {
   message = message.toLowerCase();
   if (message.includes("spam") || message.includes("sale")) {

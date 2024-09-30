@@ -4,13 +4,9 @@ function getElementWidth(content, padding, border) {
   return totalWidth;
 }
 
-console.log(getElementWidth("50px", "8px", "4px")); // 74
-console.log(getElementWidth("60px", "12px", "8.5px")); // 101
-console.log(getElementWidth("200px", "0px", "0px")); // 200
-
 function checkForSpam(message) {
   message = message.toLowerCase();
-  if (message.indexOf("spam") !== -1 || message.indexOf("sale") !== -1) {
+  if (message.includes("spam") || message.includes("sale")) {
     return true;
   } else {
     return false;
